@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ski Resorts</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topBar">
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-menu-button>
+      ☰
+    </button>
+    <h1 class="topTitle">Ski Resorts</h1>
+    <a class="topHomeLink" href="index.html" aria-label="Back to Home">⌂</a>
+  </header>
+
+  <!-- DROPDOWN MENU -->
+  <nav class="menuPanel" data-menu-panel>
+    <a href="restaurants.html" class="menuItem ">Restaurants</a>
+    <a href="onsen.html" class="menuItem">Onsen</a>
+    <a href="ski.html" class="menuItem isActive">Ski Resorts</a>
+    <a href="stores.html" class="menuItem">Stores</a>
+  </nav>
+
+  <main class="container">
+    <!-- CATEGORY BLOCKS (cards) -->
+    <section class="categoryBlocks">
+      <a class="categoryBlock" href="restaurants.html">🍜 Restaurants</a>
+      <a class="categoryBlock" href="onsen.html">♨️ Onsen</a>
+      <a class="categoryBlock isActive" href="ski.html">⛷️ Ski Resorts</a>
+      <a class="categoryBlock" href="stores.html">🛍️ Stores</a>
+    </section>
+
+<!-- FEATURED SKI RESORT (BIG BLOCK) -->
+<section class="featuredBlock">
+  <a class="featuredCard" href="https://www.niseko.ne.jp/en/niseko-lift-status/" target="_blank" rel="noopener">
+    <div class="featuredImage">
+      <!-- Replace later with an image -->
+      <!-- <img src="images/featured-ski.jpg" alt="Featured ski resort"> -->
+      <div class="placeImage"><img src="annupuri-mountain.jpg" alt="Mt. Anuupuri"></div>
+    </div>
+
+    <div class="featuredBody">
+      <h2 class="featuredTitle">Map of Mt. Anuupuri</h2>
+      <p class="featuredDesc">
+        Map of the Annupuri Ski Area in Niseko, Hokkaido, Japan. Shows ski runs, lifts status, and facilities.
+      </p>
+    </div>
+  </a>
+</section>
+
+    <!-- PLACE CARDS -->
+    <section class="cardGrid">
+      <!-- Copy/paste this whole <a class="placeCard"> block for each place -->
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Annupuri+International+Ski+Area/@42.8472215,140.6504612,15.25z/data=!4m6!3m5!1s0x5f0aa5610901e4d5:0x53263f0ee24c1c64!8m2!3d42.8474716!4d140.6479506!16s%2Fg%2F1236g_r4?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="annupuri.jpg" alt="Annupuri">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Annupuri</h2>
+          <p class="placeDesc">Relaxed and scenic ski area with wide groomed runs, great for beginners and intermediate skiers; quieter than Hirafu.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Moiwa+Ski+Resort/@42.8480381,140.6259173,17z/data=!4m10!3m9!1s0x5f0aa57af3e3dd49:0x16c5c9619866ce1a!5m3!1s2026-01-12!4m1!1i2!8m2!3d42.8482023!4d140.6303168!16s%2Fg%2F120j8j6c?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="moiwa.jpg" alt="Moiwa">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Moiwa</h2>
+          <p class="placeDesc">Smaller, peaceful resort known for excellent powder, fewer crowds, and a local, laid-back atmosphere.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Village+Ski+Resort/@42.8441439,140.6820077,14.75z/data=!4m6!3m5!1s0x5f0aafefaf426a19:0x6463dabe605c4ca6!8m2!3d42.8469779!4d140.6843228!16s%2Fg%2F1td32vfm?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="Niseko-Village.jpg" alt="Niseko-Village">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Niseko Village</h2>
+          <p class="placeDesc">Large resort with long groomed runs, modern gondolas, and direct access from resort hotels.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Tokyu+Grand+Hirafu/@42.8644328,140.6983396,17z/data=!4m10!1m2!2m1!1sgrand+hirafu+gondola+2丁目-9+nisekohirafu+1+jō+kutchan+hokkaido+japan!3m6!1s0x5f0ab00c13ab0d03:0x1967b45d4958af1a!8m2!3d42.8644562!4d140.7012542!15sCkhncmFuZCBoaXJhZnUgZ29uZG9sYSAy5LiB55uuLTkgbmlzZWtvaGlyYWZ1IDEgasWNIGt1dGNoYW4gaG9ra2FpZG8gamFwYW5aSyJJZ3JhbmQgaGlyYWZ1IGdvbmRvbGEgMiDkuIHnm64gOSBuaXNla29oaXJhZnUgMSBqxY0ga3V0Y2hhbiBob2trYWlkbyBqYXBhbpIBCnNraV9yZXNvcnSaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUlNNR05UYms1UkVBReABAPoBBAgAECc!16zL20vMGdxbmtk?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="grand-hirafu.jpg" alt="Grand Hirafu">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Grand Hirafu</h2>
+          <p class="placeDesc">Most popular Niseko resort with lively village, extensive terrain, nightlife, and access to backcountry gates.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Hanazono+Resort/@42.8931702,140.699566,18.75z/data=!4m6!3m5!1s0x5f0aba5ef865ea1b:0xa439ceefdf73c57d!8m2!3d42.8930897!4d140.7001713!16s%2Fg%2F11cmrwxww9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="hanazono.jpg" alt="Hanazono">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Hanazono</h2>
+          <p class="placeDesc">Modern resort area featuring wide open slopes, terrain parks, and family-friendly facilities.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Rusutsu+Ski+Resort/@42.7368025,140.9084474,17z/data=!3m1!4b1!4m6!3m5!1s0x5f754d983eb8e8c7:0xf7e05caff840f2cc!8m2!3d42.7368025!4d140.9110223!16s%2Fg%2F11clkrs5vv?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="rusutsu.jpg" alt="Rusutsu">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Rusutsu</h2>
+          <p class="placeDesc">Large-scale ski resort near Niseko with varied terrain, tree skiing, amusement park, and excellent snow quality.</p>
+        </div>
+      </a>
+    </section>
+
+    <section class="featuredBlock">
+  <a class="featuredCard" href="https://rusutsu.com/en/lift-and-trail-status/" target="_blank" rel="noopener">
+    <div class="featuredImage">
+      <!-- Replace later with an image -->
+      <!-- <img src="images/featured-ski.jpg" alt="Featured ski resort"> -->
+      <div class="placeImage"><img src="rusutsu-mountain.jpg" alt="Mt. Rusutsu"></div>
+    </div>
+
+    <div class="featuredBody">
+      <h2 class="featuredTitle">Map of Mt.Rusutsu</h2>
+      <p class="featuredDesc">
+        Map of the Rusutsu Ski Area. Shows ski runs, lifts status, and facilities.
+      </p>
+    </div>
+  </a>
+</section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

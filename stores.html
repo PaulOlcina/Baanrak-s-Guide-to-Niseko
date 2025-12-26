@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stores</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topBar">
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-menu-button>
+      ☰
+    </button>
+    <h1 class="topTitle">Stores</h1>
+    <a class="topHomeLink" href="index.html" aria-label="Back to Home">⌂</a>
+  </header>
+
+  <!-- DROPDOWN MENU -->
+  <nav class="menuPanel" data-menu-panel>
+    <a href="restaurants.html" class="menuItem">Restaurants</a>
+    <a href="onsen.html" class="menuItem">Onsen</a>
+    <a href="ski.html" class="menuItem">Ski Resorts</a>
+    <a href="stores.html" class="menuItem isActive">Stores</a>
+  </nav>
+
+  <main class="container">
+    <!-- CATEGORY BLOCKS (cards) -->
+    <section class="categoryBlocks">
+      <a class="categoryBlock" href="restaurants.html">🍜 Restaurants</a>
+      <a class="categoryBlock" href="onsen.html">♨️ Onsen</a>
+      <a class="categoryBlock" href="ski.html">⛷️ Ski Resorts</a>
+      <a class="categoryBlock isActive" href="stores.html">🛍️ Stores</a>
+    </section>
+
+    <!-- PLACE CARDS -->
+    <section class="cardGrid">
+      <!-- Copy/paste this whole <a class="placeCard"> block for each place -->
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Fine/@42.8424556,140.6358928,17z/data=!3m2!4b1!5s0x5f0aaf877585dc49:0x9c9713c55b511512!4m6!3m5!1s0x5f0aaf87fb4fdfc3:0x2dcd03159a43d770!8m2!3d42.8424517!4d140.6384731!16s%2Fg%2F1tcyrmh1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="niseko-fine.png" alt="Niseko Fine">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Niseko Fine</h2>
+          <p class="placeDesc">Well-known ski rental shop offering quality skis, snowboards, and winter gear; convenient and reliable service near the slopes.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/The+Green+Leaf+Niseko+Village,+Tapestry+Collection+by+Hilton/@42.8462021,140.6756302,20z/data=!4m10!3m9!1s0x5f0aafe563543d1f:0xcc499b79697eec8e!5m3!1s2026-01-12!4m1!1i2!8m2!3d42.8466076!4d140.6761941!16s%2Fg%2F122161wm?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="green-leaf.jpg" alt="The Green Leaf">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">The Green Leaf</h2>
+          <p class="placeDesc">Ski-in ski-out hotel with on-site ski facilities and easy access to Niseko Village slopes; convenient for rentals and services.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Powder+Company/@42.847861,140.64175,15.5z/data=!4m9!1m2!2m1!1sirohara+hot+spring!3m5!1s0x5f0aa561baddf525:0xbe78ecb9c9e731!8m2!3d42.848372!4d140.646489!16s%2Fg%2F1tgfd4kn?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="powder.jpg" alt="Powder Company">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Powder Company</h2>
+          <p class="placeDesc">Renowned backcountry guiding service offering avalanche safety training, guided tours, and expert local knowledge for advanced skiers.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/MaxValu+Kutchan+Shop/@42.8892501,140.7453008,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0aba0a08892297:0x5026120498fb77bf!8m2!3d42.8892463!4d140.7501771!16s%2Fg%2F1tdx3y3n?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="maxvalue.jpg" alt="MaxValu Kutchan Shop">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">MaxValu</h2>
+          <p class="placeDesc">Convenient local supermarket offering groceries, snacks, and essentials for travelers and residents alike.</p>
+        </div>
+      </a>
+          <a class="placeCard" href="https://www.google.com/maps/place/DCM/@42.8818417,140.7446442,16.21z/data=!4m10!1m2!2m1!1sdcm!3m6!1s0x5f0ab0989dbc55e1:0x4f71699dc1c5d2ab!8m2!3d42.8830208!4d140.7525274!15sCgNkY21aBSIDZGNtkgEWaG9tZV9pbXByb3ZlbWVudF9zdG9yZZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VOQmJEWlVXVkZCRUFF4AEA-gEECAAQIQ!16s%2Fg%2F11bwym30k9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="dcm.jpg" alt="DCM">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">DCM</h2>
+          <p class="placeDesc">Big hardware and home store selling tools, household items, winter supplies, and travel necessities.</p>
+        </div>
+      </a>
+      
+      <a class="placeCard" href="https://www.google.com/maps/place/Lucky+Supermarket+Kutchan+shop/@42.9001999,140.7482168,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0aba1b363d2203:0xba2ca030c0327204!8m2!3d42.900196!4d140.7507971!16s%2Fg%2F11b5pj3r4n?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="lucky.jpg" alt="Lucky Supermarket">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Lucky Supermarket</h2>
+          <p class="placeDesc">Local supermarket offering affordable groceries, fresh produce, and everyday Japanese food items.</p>
+        </div>
+      </a>
+      
+      <a class="placeCard" href="https://www.google.com/maps/place/Yamada+Denki/@42.8987236,140.7147554,13z/data=!4m10!1m2!2m1!1syamda!3m6!1s0x5f0ab099c6108717:0xe586cdf8227a26d8!8m2!3d42.8796477!4d140.7510901!15sCgV5YW1kYVoHIgV5YW1kYZIBEWVsZWN0cm9uaWNzX3N0b3JlmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5VY1RsZlVGUkJFQUXgAQD6AQQIMxAR!16s%2Fg%2F11_svvmbh?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="yamada.jpg" alt="Yamada Denki">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Yamada Denki</h2>
+          <p class="placeDesc">Large electronics retailer selling appliances, cables, chargers, gadgets, and household electronics.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Mポケット/@42.9014123,140.7511584,17.17z/data=!4m14!1m7!3m6!1s0x5f0aaf003b1abc31:0xb9ec75b27310cb41!2sM+pocket!8m2!3d42.8148953!4d140.716421!16s%2Fg%2F11ynv756yn!3m5!1s0x5f0aba1cf89cc419:0xd87ea61262c50dab!8m2!3d42.9031831!4d140.7525746!16s%2Fg%2F11btn1g73k?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="mpocket.jpg" alt="mpocket">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Mポケット</h2>
+          <p class="placeDesc">Small convenience store for quick snacks, drinks, and basic daily needs; useful for short stops. But mainly a liquor store.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Coop+Sapporo/@42.9026764,140.7457907,17z/data=!4m6!3m5!1s0x5f0aba1a357e34c9:0x38ce6dae142c2804!8m2!3d42.903423!4d140.746132!16s%2Fg%2F1vxcw69c?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="coop.jpg" alt="Coop Kutchan">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Coop Kutchan</h2>
+          <p class="placeDesc">Cooperative supermarket chain with good quality groceries, prepared foods, and local products.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

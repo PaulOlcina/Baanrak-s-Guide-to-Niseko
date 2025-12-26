@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restaurants</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topBar">
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-menu-button>
+      ☰
+    </button>
+    <h1 class="topTitle">Restaurants</h1>
+    <a class="topHomeLink" href="index.html" aria-label="Back to Home">⌂</a>
+  </header>
+
+  <!-- DROPDOWN MENU -->
+  <nav class="menuPanel" data-menu-panel>
+    <a href="restaurants.html" class="menuItem isActive">Restaurants</a>
+    <a href="onsen.html" class="menuItem">Onsen</a>
+    <a href="ski.html" class="menuItem">Ski Resorts</a>
+    <a href="stores.html" class="menuItem">Stores</a>
+  </nav>
+
+  <main class="container">
+    <!-- CATEGORY BLOCKS (cards) -->
+    <section class="categoryBlocks">
+      <a class="categoryBlock isActive" href="restaurants.html">🍜 Restaurants</a>
+      <a class="categoryBlock" href="onsen.html">♨️ Onsen</a>
+      <a class="categoryBlock" href="ski.html">⛷️ Ski Resorts</a>
+      <a class="categoryBlock" href="stores.html">🛍️ Stores</a>
+    </section>
+
+
+    <!-- PLACE CARDS -->
+    <section class="cardGrid">
+      <!-- Copy/paste this whole <a class="placeCard"> block for each place -->
+      <a class="placeCard" href="https://www.google.com/maps/place/Rakuichi+Soba/@42.8428124,140.6311798,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aaf87a3f3cfd7:0x3dfda3656c5ae36c!8m2!3d42.8428124!4d140.640192!16s%2Fg%2F1xgzbkvq?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="rakuichi.jpg" alt="Rakuichi Soba">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Rakuichi Soba</h2>
+          <p class="placeDesc">Traditional soba restaurant using local buckwheat. Calm, rustic atmosphere and excellent noodle texture.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Teuchi-Soba+Ichimura/@42.8634992,140.7153147,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0ab06f4f7baee9:0x7b43c2299412812b!8m2!3d42.8634992!4d140.7243269!16s%2Fg%2F1vd94wyp?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="teuchi-soba.jpg" alt="Teuchi-Soba Ichimura">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Teuchi-Soba Ichimura</h2>
+          <p class="placeDesc">Small, traditional soba shop known for artisanal hand-cut noodles and a minimal, authentic menu.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Houzuki+Udon/@42.8486785,140.7380563,17z/data=!3m1!4b1!4m6!3m5!1s0x5f0ab04eab955f21:0xb23f6c56598ed05!8m2!3d42.8486785!4d140.7406312!16s%2Fg%2F1td2m8j9?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="houzuki.jpg" alt="Houzuki Udon">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Houzuki Udon</h2>
+          <p class="placeDesc">Cozy udon spot serving thick noodles and comforting broths in a casual setting.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/kobito+japanese+restaurant/@42.8388549,140.6114877,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aa58129e5b56f:0x6314f9fbd7a4825!8m2!3d42.8388549!4d140.6204999!16s%2Fg%2F11bwyb5bkc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="kobito.jpg" alt="Kobito">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Kobito</h2>
+          <p class="placeDesc">Friendly restaurant offering classic Japanese dishes; approachable and welcoming atmosphere.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Nakama+Ramen/@42.901624,140.7419316,16z/data=!3m1!5s0x5f0aba1b626b2261:0x411a3277b3d1cc13!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aba1c65537e09:0x11ec0a6edfdec174!8m2!3d42.901624!4d140.7509438!16s%2Fg%2F1td5lh21?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="nakama.jpg" alt="Nakama Ramen">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Nakama Ramen</h2>
+          <p class="placeDesc">Well-known ramen shop with rich, flavorful broths, especially popular during winter.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Õhashi/@42.7991639,140.6944583,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aae637e5de437:0xd5340c1b20df8d57!8m2!3d42.7991639!4d140.7034705!16s%2Fg%2F1thx8dml?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="ohashi.jpg" alt="ohashi">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Ohashi</h2>
+          <p class="placeDesc">Refined Japanese restaurant with a calm, intimate atmosphere and carefully prepared dishes.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Morideai/@42.898992,140.7404778,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0abbc485af0479:0x109c41ca62e04119!8m2!3d42.898992!4d140.74949!16s%2Fg%2F11lr_59_y1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="morideai.jpg" alt="Morideai">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Morideai</h2>
+          <p class="placeDesc">Casual izakaya serving home-style Japanese food; warm, social evening atmosphere.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Yotei-an/@42.7966616,140.7019989,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aae7b9c123751:0x1c6927cb9fb1976e!8m2!3d42.7966616!4d140.7110111!16s%2Fg%2F1thggttx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="yotei-an.jpg" alt="Yotei-an">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Yotei-an</h2>
+          <p class="placeDesc">Cozy restaurant near Mt. Yotei area serving traditional Japanese dishes, local favorites, and seasonal specialties.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Suttsu+Sakana+Isshin/@42.8129448,140.6688719,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aaf74eba0e6a5:0x5f3519a4c663d984!8m2!3d42.8129448!4d140.6778841!16s%2Fg%2F11j77zdxhc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="suttsu-sakana-issin.jpg" alt="Suttsu Sakana Isshin">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Suttsu Sakana Isshin</h2>
+          <p class="placeDesc">Traditional seafood restaurant specializing in fresh catches from the nearby waters, known for its authentic flavors and warm service.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/BIRCH+TREE+CAFE/@42.8129448,140.6688719,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aaff39beedf49:0x1376b86b1f7848e0!8m2!3d42.8095491!4d140.7065361!16s%2Fg%2F11gjt_hp3_?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="birch-tree.jpg" alt="Birch Tree Cafe">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Birch Tree Cafe</h2>
+          <p class="placeDesc">Cozy cafe with a rustic charm, offering a variety of homemade pastries, light meals, and specialty coffee in a peaceful setting.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="www.google.com/maps/place/Jirocho/@42.8095491,140.6975239,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aaef5f41e2075:0x1cfbaa57c1a75892!8m2!3d42.8044462!4d140.6855987!16s%2Fg%2F1tfc1tdx?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="jirocho.jpg" alt="Jirocho">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Jirocho</h2>
+          <p class="placeDesc">Local favorite offering classic Japanese meals in a casual, no-frills environment.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/White+Birch+Cafe/@42.8044462,140.6765865,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0aaf700e3ae4d5:0xb69010f6f620e80e!8m2!3d42.8034422!4d140.6876747!16s%2Fg%2F11gmcblrdf?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="white-birch.jpg" alt="White Birch Cafe">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">White Birch Cafe</h2>
+          <p class="placeDesc">Bright café with coffee and light dishes; relaxed and peaceful atmosphere.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/中華料理+魚米の郷/@42.9021685,140.7416065,16z/data=!4m10!1m3!11m2!2szz1wplqlQWOP3pqKSR8cbw!3e3!3m5!1s0x5f0abbaa1f5bc769:0x69e915755cb862b!8m2!3d42.9021685!4d140.7506187!16s%2Fg%2F11y8gbm85x?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="gyomainosato.jpg" alt="Gyomainosato">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Chūka Ryōri Uomenosato</h2>
+          <p class="placeDesc">Casual Chinese restaurant known locally for fresh seafood and hearty Chinese-style dishes with regional flair.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/TAJ+MAHAL+Annupuri/@42.8423941,140.6409583,16z/data=!4m14!1m7!3m6!1s0x5f0ab19b856d3361:0x1ac0427463e232e6!2sTaj+Mahal+Niseko+Hirafu!8m2!3d42.8592171!4d140.7050462!16s%2Fg%2F11sdpw_lrx!3m5!1s0x5f0aaf866bd36b3f:0xe8f26a6785b84c35!8m2!3d42.8413152!4d140.6422418!16s%2Fg%2F11c55rkpdl?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="tajmahal.jpg" alt="Taj Mahal Annupuri">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Taj Mahal Annupuri</h2>
+          <p class="placeDesc">Popular Indian restaurant serving rich curries, naan, and vegetarian options; comforting and flavorful meals after a day on the slopes.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

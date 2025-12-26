@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onsen</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topBar">
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" data-menu-button>
+      ☰
+    </button>
+    <h1 class="topTitle">Onsen</h1>
+    <a class="topHomeLink" href="index.html" aria-label="Back to Home">⌂</a>
+  </header>
+
+  <!-- DROPDOWN MENU -->
+  <nav class="menuPanel" data-menu-panel>
+    <a href="restaurants.html" class="menuItem">Restaurants</a>
+    <a href="onsen.html" class="menuItem isActive">Onsen</a>
+    <a href="ski.html" class="menuItem">Ski Resorts</a>
+    <a href="stores.html" class="menuItem">Stores</a>
+  </nav>
+
+  <main class="container">
+    <!-- CATEGORY BLOCKS (cards) -->
+    <section class="categoryBlocks">
+      <a class="categoryBlock" href="restaurants.html">🍜 Restaurants</a>
+      <a class="categoryBlock isActive" href="onsen.html">♨️ Onsen</a>
+      <a class="categoryBlock" href="ski.html">⛷️ Ski Resorts</a>
+      <a class="categoryBlock" href="stores.html">🛍️ Stores</a>
+    </section>
+
+
+    <!-- PLACE CARDS -->
+    <section class="cardGrid">
+      <!-- Copy/paste this whole <a class="placeCard"> block for each place -->
+      <a class="placeCard" href="https://www.google.com/maps/place/Niseko+Annupuri+Onsen+Yugokorotei/@42.843897,140.6319556,17z/data=!4m10!3m9!1s0x5f0aa579b49ff99f:0x6bc17207e3434ac8!5m3!1s2026-01-12!4m1!1i2!8m2!3d42.843897!4d140.6345305!16s%2Fg%2F121yb4vl?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="yugokorote.jpg" alt="Yugokorotei">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Yugokorotei</h2>
+          <p class="placeDesc">Classic onsen with scenic surroundings and soothing thermal baths — perfect after a day in the snow or hiking.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Yukichichibu+Onsen/@42.8695422,140.5955992,17z/data=!4m6!3m5!1s0x5f0aa4fd4ddf2c4f:0xbb32d4aac3e62f9e!8m2!3d42.8695422!4d140.5981741!16s%2Fg%2F1tnqgsfd?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="yukichichibu.jpg" alt="Yukichichibu Onsen">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Yukichichibu Onsen</h2>
+          <p class="placeDesc">Popular mud onsen featuring mineral-rich mud baths alongside outdoor hot springs, surrounded by mountain scenery — especially relaxing after skiing or hiking.</p>
+        </div>
+      </a>
+
+      <a class="placeCard" href="https://www.google.com/maps/place/Iroha+Hot+Spring+(Open+to+the+public)/@42.847861,140.64175,15.5z/data=!4m10!1m2!2m1!1sirohara+hot+spring!3m6!1s0x5f0aa50024ee6ee3:0x66c3d6f3ecf061f8!8m2!3d42.8502647!4d140.6409829!15sChJpcm9oYXJhIGhvdCBzcHJpbmdaFCISaXJvaGFyYSBob3Qgc3ByaW5nkgEDc3BhmgEjQ2haRFNVaE5NRzluUzBWSlEwRm5UVVJuTUZsbFRscFJFQUXgAQD6AQUIzAEQPg!16s%2Fg%2F11l_8_vtbc?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA2OUgBUAM%3D" target="_blank" rel="noopener">
+        <div class="placeImage">
+  <img src="iroha.jpg" alt="Iroha Hot Spring">
+</div>
+
+        <div class="placeBody">
+          <h2 class="placeName">Iroha Hot Spring</h2>
+          <p class="placeDesc">Public hot spring with indoor and outdoor baths; relaxed atmosphere and easy access, ideal for unwinding after skiing.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
